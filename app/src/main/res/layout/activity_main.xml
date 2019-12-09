@@ -44,6 +44,7 @@
                 android:ems="10"
                 android:hint="Usuario"
                 android:inputType="textPassword"
+                android:text="@={userModel.user}"
                 tools:ignore="Autofill,LabelFor" />
 
             <EditText
@@ -53,12 +54,14 @@
                 android:ems="10"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
+                android:text="@={userModel.password}"
                 tools:ignore="Autofill,LabelFor" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:onClick="@{userModel.loginUser()}"
                 android:text="Ingresar" />
 
         </LinearLayout>
