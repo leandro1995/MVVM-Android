@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Login Demo MVVM Android"
+                android:text="@string/title_login_text"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:ems="10"
-                android:hint="Usuario"
+                android:hint="@string/user_hint"
                 android:inputType="textPassword"
                 android:text="@={userModel.user}"
                 tools:ignore="Autofill,LabelFor" />
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:ems="10"
-                android:hint="Contraseña"
+                android:hint="@string/password_hint"
                 android:inputType="textPassword"
                 android:text="@={userModel.password}"
                 tools:ignore="Autofill,LabelFor" />
@@ -61,8 +61,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:onClick="@{userModel.loginUser()}"
-                android:text="Ingresar" />
+                android:onClick="@{()-> userModel.loginUser()}"
+                android:text="@string/enter_text" />
 
         </LinearLayout>
 

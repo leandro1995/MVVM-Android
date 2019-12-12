@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">MVVM Android</string>
+
+    <!-- Text -->
+    <string name="enter_text">Ingresar</string>
+    <string name="title_login_text">Login Demo MVVM Android"</string>
+
+    <!-- Hint -->
+    <string name="user_hint">Usuario</string>
+    <string name="password_hint">Contraseña</string>
+
+    <!-- Message -->
+    <string name="verify_user_message">Usuario o contraseña no son correctas</string>
+
 </resources>
