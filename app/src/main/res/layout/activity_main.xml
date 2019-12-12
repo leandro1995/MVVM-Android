@@ -43,7 +43,7 @@
                 android:layout_marginTop="15dp"
                 android:ems="10"
                 android:hint="@string/user_hint"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:text="@={userModel.user}"
                 tools:ignore="Autofill,LabelFor" />
 
